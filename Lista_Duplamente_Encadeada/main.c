@@ -24,11 +24,12 @@ int main(void)
   printf("6 Existe? %d \n", ll_exists(my_list,6));
   ll_remove(&my_list, 6);
   printf("6 Existe? %d \n", ll_exists(my_list,6));
+  printf("114 Existe? %d \n", ll_exists(my_list,114));
+  ll_remove(&my_list, 114);
+  printf("114 Existe? %d \n", ll_exists(my_list,114));
 
   ll_print(my_list, "Minha lista:");
 
   ll_clear(&my_list);
-
-
   return 0;
 }
