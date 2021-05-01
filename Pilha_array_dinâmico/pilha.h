@@ -1,9 +1,11 @@
-#ifdef _PILHA_H_
+#ifndef _PILHA_H_
 #define _PILHA_H_
 
 typedef struct pilha Pilha;
 
 Pilha * pilha_cria (void);
+int pilha_get_dim(Pilha * p);
+int pilha_get_n(Pilha * p);
 void pilha_push (Pilha * p, float v);
 float pilha_pop (Pilha * p);
 int pilha_vazia (Pilha * p);

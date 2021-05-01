@@ -2,5 +2,6 @@
   "files.associations": {
     "stdio.h": "c",
     "lista_circular.h": "c"
-  }
+  },
+  "C_Cpp.dimInactiveRegions": false
 }
