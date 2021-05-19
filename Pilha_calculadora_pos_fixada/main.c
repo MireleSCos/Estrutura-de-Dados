@@ -17,13 +17,13 @@ int main()
 
     if (c == '*' || c == '-' ||c == '+' ||c == '/')
     {
-      printf("Letraa : %d \n ",c);
+      //printf("Letraa : %d \n ",c);
       calc_operador(calc, c);
     }else{
       ungetc(c, stdin); //devolver caractere lido e tentar ler número
       if (scanf("%f",&v) == 1)
       {
-        printf("Numero : % f\n ",v);
+        //printf("Numero : % f\n ",v);
         calc_operando(calc,v);
       }
       
