@@ -13,11 +13,11 @@ int main()
 
   do
   {
-    scanf("%c", &c);
-    
+    scanf("%s", &c);
+
     if (c == '*' || c == '-' ||c == '+' ||c == '/')
     {
-      printf("Letraa : %c \n ",c);
+      printf("Letraa : %d \n ",c);
       calc_operador(calc, c);
     }else{
       ungetc(c, stdin); //devolver caractere lido e tentar ler número
