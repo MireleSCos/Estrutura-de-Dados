@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
-#define QTD_ELEMENTOS 3
+#define n 3
 
 float calcDesvioPadrao(float * vetor);
 
 int main() {
-  float vetor[QTD_ELEMENTOS];
+  float vetor[n];
 
-  for (int i = 0; i < QTD_ELEMENTOS; i++) {
+  for (int i = 0; i < n; i++) {
       scanf("%f", &vetor[i]);
   }
 
@@ -18,18 +18,18 @@ int main() {
 
 float calcDesvioPadrao(float * vetor){
   float somatorio = 0;
-  for (int i = 0; i < QTD_ELEMENTOS; i++) {
+  for (int i = 0; i < n; i++) {
       somatorio += vetor[i];
   }
 
-  float media = somatorio / (float) QTD_ELEMENTOS;
+  float media = somatorio / (float) n;
 
   float variacoes = 0;
-  for (int i = 0; i < QTD_ELEMENTOS; i++) {
+  for (int i = 0; i < n; i++) {
       float v = vetor[i] - media;
       variacoes += (v * v);
   }
 
-  float desvio = sqrt(variacoes / QTD_ELEMENTOS);
+  float desvio = sqrt(variacoes / n);
   return desvio;
 }
